@@ -1,0 +1,82 @@
+.wrapper {
+    background-color: black;
+    box-shadow: 0 20px 40px rgba(0,0,0,.3), 0 15px 12px rgba(0,0,0,.2);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .75) 100%);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.date {
+    font-size: .9rem;
+}
+
+.header, .data {
+    z-index: 10;
+}
+
+.wrapper .data {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    padding: 1rem;
+    position: relative;
+}
+
+.content h4 {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+}
+
+.tags {
+    transform: translateY(25px);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transition: all .5s;
+    font-size: .75rem;
+}
+
+.tagsItem:not(:last-child) {
+    margin-right: .25rem;
+}
+
+.tagsItem {
+    margin-right: .25rem;
+    background: #525252;
+    padding: .1rem .3rem;
+    border-radius: .6rem;
+}
+
+.wrapper:hover .tags {
+    transform: translateY(-22px);
+    opacity: 1;
+}

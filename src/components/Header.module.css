@@ -1,0 +1,81 @@
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 3rem 1.0875rem 10rem 1.0875rem;
+    color: rgba(0,0,0,0.51);
+    text-align: center;
+}
+
+.avatar {
+    height: 125px;
+    width: 125px;
+    margin: 0 auto;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.badge {
+    padding: .1rem .5rem;
+    background: rgba(0,0,0,.51);
+    color: #fff;
+    font-size: .7em;
+    font-weight: bold;
+    border-radius: .2rem;
+}
+
+.name {
+    margin: 1rem 0 .25rem 0;
+    color: rgba(0,0,0,0.72);
+}
+
+.location {
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location svg {
+    margin-right: .5rem;
+}
+
+.socialMedia {
+    font-size: .8rem;
+    margin-top: 2rem;
+}
+
+.socialMedia ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.socialMedia ul li {
+    margin: 0;
+}
+
+.socialMedia ul li a {
+    color: rgb(182, 182, 182);;
+    margin: 0 .25rem;
+    font-size: 1.5em;
+}
+
+.socialMedia ul li a:hover {
+    color: cornflowerblue;
+}

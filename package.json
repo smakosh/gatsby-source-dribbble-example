@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-source-behance-example",
+  "description": "Gatsby Source - Behance",
+  "version": "1.0.0",
+  "author": "LekoArts <hello@lekoarts.de>",
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "dotenv": "^5.0.0",
+    "gatsby": "^1.9.151",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-react-next": "^1.0.7",
+    "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-source-dribbble": "^1.0.3",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7",
+    "typography-theme-sutro": "^0.15.10"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop -o",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\""
+  }
+}
