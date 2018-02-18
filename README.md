@@ -19,7 +19,7 @@ Link to gatsby-source-dribbble: [gatsby-source-dribbble](https://github.com/smak
  
 ### Building the app
 
-    gatsby develop
+    gatsby build
     
 ### Testing the built version
 
