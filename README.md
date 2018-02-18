@@ -10,5 +10,17 @@ Link to gatsby-source-dribbble: [gatsby-source-dribbble](https://github.com/smak
     cd gatsby-source-dribbble-example/
   
     yarn install
-  
+    
+## Follow the instructions [here](http://developer.dribbble.com/v2/oauth/) to get your Access_token
+
+### Starting the app
+
     gatsby develop
+ 
+### Building the app
+
+    gatsby develop
+    
+### Testing the built version
+
+    gatsby serve
