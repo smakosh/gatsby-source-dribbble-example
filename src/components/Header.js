@@ -8,10 +8,7 @@ const Header = ({ user }) => (
 			<div className={css.avatar}>
 				<a href={user.url}><img src={user.avatar} alt={user.name} /></a>
 			</div>
-			{user.pro
-				? <span className={css.badge}>Pro</span>
-				: null
-			}
+			{user.pro && <span className={css.badge}>Pro</span>}
 			<h1 className={css.name}>
 				<a href={user.url} className={css.name}>
 					{user.username}
