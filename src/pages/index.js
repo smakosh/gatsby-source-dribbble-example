@@ -1,13 +1,13 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 import Card from '../components/Card'
 
-const Index = (props) => {
-	const shots = props.data.allDribleProjects.edges
-
-	return (
+const Index = ({ data: { allDribleProjects } }) => (
+	<Layout>
 		<div className="container index-container">
 			<div className="css-grid">
-				{shots.map(shot => (
+				{allDribleProjects.edges.map(shot => (
 					<Card
 						date={shot.node.published}
 						title={shot.node.title}
@@ -19,8 +19,8 @@ const Index = (props) => {
 				))}
 			</div>
 		</div>
-	)
-}
+	</Layout>
+)
 
 export default Index
 
