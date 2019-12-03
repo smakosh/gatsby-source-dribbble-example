@@ -11,7 +11,7 @@ module.exports = {
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
 		{
-			resolve: '@mitchellbutler/gatsby-source-dribbble',
+			resolve: 'gatsby-source-dribbble',
 			options: {
 				access_token: `${process.env.ACCESS_TOKEN}`
 			}
