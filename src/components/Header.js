@@ -1,6 +1,16 @@
-import React from 'react'
-import { FaMapMarker, FaGlobe, FaTwitter, FaGithub, FaInstagram, FaCodepen, FaMedium, FaBehance, FaLinkedin } from 'react-icons/lib/fa'
-import css from './Header.module.css'
+import React from 'react';
+import {
+	FaMapMarker,
+	FaGlobe,
+	FaTwitter,
+	FaGithub,
+	FaInstagram,
+	FaCodepen,
+	FaMedium,
+	FaBehance,
+	FaLinkedin
+} from 'react-icons/fa';
+import css from './Header.module.css';
 
 const Header = ({ user }) => (
 	<div className={css.wrapper}>

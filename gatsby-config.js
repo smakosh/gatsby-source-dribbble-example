@@ -8,8 +8,10 @@ module.exports = {
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
+		'gatsby-plugin-sharp',
+		'gatsby-transformer-sharp',
 		{
-			resolve: 'gatsby-source-dribbble',
+			resolve: '@mitchellbutler/gatsby-source-dribbble',
 			options: {
 				access_token: `${process.env.ACCESS_TOKEN}`
 			}
