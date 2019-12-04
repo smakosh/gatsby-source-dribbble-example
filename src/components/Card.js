@@ -1,15 +1,23 @@
-import React from 'react'
-import css from './Card.module.css'
+import React from 'react';
+import Img from 'gatsby-image';
+import css from './Card.module.css';
 
-const Card = ({ url, cover, date, tags, title }) => (
+const Card = ({ url, cover, date, tags, title, localCover }) => (
 	<div className="card">
 		<a
 			href={url}
 			target="_blank"
 			rel="noopener noreferrer"
 			className={css.wrapper}
-			style={{ backgroundImage: `url(${cover})` }}
 		>
+			<div className={css.image}>
+				{/* not all images will have a local cover (e.g., GIFs) */}
+				{localCover.childImageSharp && localCover.childImageSharp.fluid ? (
+					<Img fluid={localCover.childImageSharp.fluid} />
+				) : (
+					<img src={cover} alt={title} />
+				)}
+			</div>
 			<div className={css.header}>
 				<div className={css.date}>
 					<p>{date}</p>

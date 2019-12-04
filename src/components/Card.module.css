@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 300px;
+  min-height: 272px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -22,6 +22,12 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .75) 100%);
+}
+
+.image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
