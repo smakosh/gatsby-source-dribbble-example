@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import css from './Card.module.css';
+import * as css from './Card.module.css';
 
 const Card = ({ url, cover, date, tags, title, localCover }) => (
 	<div className="card">
