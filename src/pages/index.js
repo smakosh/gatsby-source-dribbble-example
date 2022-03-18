@@ -7,7 +7,7 @@ const Index = ({ data }) => (
 	<Layout>
 		<div className="container index-container">
 			<div className="css-grid">
-				{data.allDribbbleShot.nodes.map(shot => (
+				{data.allDribbbleShot.nodes.map((shot) => (
 					<Card
 						date={shot.published}
 						title={shot.title}
@@ -26,23 +26,21 @@ const Index = ({ data }) => (
 export default Index;
 
 export const query = graphql`
-  query {
-    allDribbbleShot(sort: { fields: [published], order: DESC }) {
-      nodes {
-        title
-        id
-        published(formatString: "MMMM DD, YYYY")
-        url
-        tags
-        cover
-        localCover {
-          childImageSharp {
-            fluid(maxWidth: 396) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
+	query {
+		allDribbbleShot(sort: { fields: [published], order: DESC }) {
+			nodes {
+				title
+				id
+				published(formatString: "MMMM DD, YYYY")
+				url
+				tags
+				cover
+				localCover {
+					childImageSharp {
+						gatsbyImageData(layout: FULL_WIDTH)
+					}
+				}
+			}
+		}
+	}
 `;

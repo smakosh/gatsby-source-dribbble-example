@@ -10,7 +10,7 @@ import {
 	FaBehance,
 	FaLinkedin
 } from 'react-icons/fa';
-import css from './Header.module.css';
+import * as css from './Header.module.css';
 
 const Header = ({ user }) => (
 	<div className={css.wrapper}>
